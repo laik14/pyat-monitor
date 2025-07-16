@@ -1,0 +1,7 @@
+runtime: python
+version: 3.11
+start: python app.py
+cron:
+  - name: parse-pyat
+    schedule: "5 11 * * 0"   # воскресенье 11:05 UTC (14:05 МСК)
+    command: python app.py
